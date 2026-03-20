@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle, #ffffff 0%, #f4f1e1 100%);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #1e3b2b;
+  overflow: hidden;
+  text-align: center;
+}
+
+.scene {
+  position: absolute;
+  opacity: 0;
+  transition:
+    opacity 2s ease-in-out,
+    transform 2s ease-in-out;
+  transform: scale(0.95);
+  width: 100%;
+  padding: 20px;
+  pointer-events: none; /* Prevents clicking invisible scenes */
+}
+
+.scene.active {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto; /* Re-enables clicking when visible */
+}
+
+.moon {
+  font-size: 6rem;
+  text-shadow: 0 0 30px rgba(212, 175, 55, 0.6);
+}
+
+h1 {
+  font-family: "Amiri", serif;
+  color: #d4af37;
+  font-size: 4rem;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 4px rgba(30, 59, 43, 0.15);
+}
+
+.thanks-title {
+  font-size: 3rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #4a7c59;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.message {
+  font-size: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #1e3b2b;
+}
+
+.signature {
+  font-family: "Amiri", serif;
+  font-size: 2rem;
+  color: #d4af37;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* --- New THR Box Styles --- */
+.thr-box {
+  margin-top: 25px;
+  padding: 20px;
+  background-color: rgba(212, 175, 55, 0.1);
+  border: 2px dashed #d4af37;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+.thr-title {
+  color: #4a7c59;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.thr-number {
+  font-family: monospace;
+  font-size: 1.3rem;
+  color: #1e3b2b;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+button {
+  background-color: #d4af37;
+  color: #ffffff;
+  border: 2px solid #d4af37;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 600;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #b5952f;
+  border-color: #b5952f;
+}
+
+/* Secondary button styling for "Play Again" */
+.skip-btn {
+  background-color: transparent;
+  color: #4a7c59;
+  border-color: #4a7c59;
+}
+
+.skip-btn:hover {
+  background-color: #4a7c59;
+  color: #ffffff;
+}
+
+.mute-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 100; /* Ensures it stays on top of all scenes */
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #1e3b2b;
+  border: 2px solid #d4af37;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.mute-btn:hover {
+  background-color: #d4af37;
+  color: #ffffff;
+}

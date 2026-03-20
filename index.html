@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinematic Eid Greeting</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <audio id="bgMusic" loop preload="auto">
+      <source src="song.mp3" type="audio/mpeg" />
+    </audio>
+    <button id="muteBtn" class="mute-btn" onclick="toggleAudio()">
+      🔇 Putar Musik
+    </button>
+
+    <div class="scene" id="scene1">
+      <div class="moon">
+        <img
+          src="https://png.pngtree.com/png-clipart/20230305/ourmid/pngtree-ketupat-vector-art-png-image_6633261.png"
+          alt="ketupat"
+        />
+      </div>
+    </div>
+
+    <div class="scene" id="scene2">
+      <h1>Eid Mubarak</h1>
+      <p class="subtitle">Selamat Hari Raya Idul Fitri 1447 H</p>
+    </div>
+
+    <div class="scene" id="scene3">
+      <p class="message">
+        Semoga hari istimewa ini membawa kedamaian, kebahagiaan, dan kemakmuran
+        bagi kita semua.
+      </p>
+    </div>
+
+    <div class="scene" id="scene4">
+      <p class="signature">Warm wishes,<br />Zikri Aulia</p>
+
+      <div class="thr-box">
+        <p class="thr-title">Bagi THR Dong Om / Tante 🥹</p>
+        <p class="thr-number">klik tombol di bawah untuk kirim via DANA</p>
+        <button onclick="goToDana()">Kirim via DANA</button>
+        <button class="skip-btn" onclick="startSequence()">Tonton Lagi</button>
+      </div>
+    </div>
+
+    <div class="scene" id="scene5">
+      <h1 class="thanks-title">Alhamdulillah!</h1>
+      <p class="message">
+        Terima kasih banyak! Semoga Allah SWT melimpahkan rezeki berlipat-lipat
+        ganda. Aamiin! 🤲
+      </p>
+      <button onclick="startSequence()" style="margin-top: 20px">
+        Tonton Lagi
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
