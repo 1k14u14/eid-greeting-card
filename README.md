@@ -36,8 +36,8 @@ cd eid-greeting-card
 ```
 3. Open index.html in your browser.
    (Note: For the audio functionality to work perfectly without browser restrictions, it is recommended to open the project using a local server like the VS Code Live Server extension).
-
-### 👨‍💻 Author
+   ---
+# 👨‍💻 Author
 Zikri Aulia Frontend Engineer focused on crafting interactive, modern web experiences through rapid prototyping and vibe coding.
 ---
 Selamat Hari Raya Idul Fitri. May this project bring joy to you and your loved ones!
